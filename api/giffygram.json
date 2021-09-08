@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Tia",
+      "dateJoined": 1630513631166,
+      "email": "tia@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Brian",
+      "dateJoined": 1630513631183,
+      "email": "bryan@nashvillesoftwareschool.com"
+    },
+    {
+      "name": "Tyler",
+      "dateJoined": 1630513631183,
+      "email": "tyler@nashvillesoftwareschool.com",
+      "id": 4
+    },
+    {
+      "name": "Susie",
+      "dateJoined": 1630513631183,
+      "email": "susie@nashvillesoftwareschool.com",
+      "id": 5
+    },
+    {
+      "name": "Susie",
+      "dateJoined": 1630513631183,
+      "email": "susie@nashvillesoftwareschool.com",
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "id":1,
+      "userId":1,
+      "title":"This is so so funny",
+      "imageURL":"https://media.giphy.com/media/10JhviFuU2gWD6/giphy.gif"
+    },
+    {
+      "id":2,
+      "userId":1,
+      "title":"This is even better than before",
+      "imageURL":"https://media.giphy.com/media/3i7zenReaUuI0/giphy.gif"
+    }
+  ],
+  "messages": []
+}
