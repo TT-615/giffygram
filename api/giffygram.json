@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "Tia",
-      "dateJoined": 1630513631166,
+      "dateJoined": 1633928400000,
       "email": "tia@gmail.com"
     },
     {
       "id": 2,
-      "name": "Brian",
+      "name": "Sydney",
       "dateJoined": 1630513631183,
       "email": "bryan@nashvillesoftwareschool.com"
     },
@@ -29,20 +29,30 @@
       "dateJoined": 1630513631183,
       "email": "susie@nashvillesoftwareschool.com",
       "id": 6
+    },
+    {
+      "name": "Bryan",
+      "email": "bryan@bn.com",
+      "id": 7
+    },
+    {
+      "name": "Susie",
+      "email": "susie@bn.com",
+      "id": 8
     }
   ],
   "posts": [
     {
-      "id":1,
-      "userId":1,
-      "title":"This is so so funny",
-      "imageURL":"https://media.giphy.com/media/10JhviFuU2gWD6/giphy.gif"
+      "id": 1,
+      "userId": 1,
+      "title": "This is so so funny",
+      "imageURL": "https://media.giphy.com/media/10JhviFuU2gWD6/giphy.gif"
     },
     {
-      "id":2,
-      "userId":1,
-      "title":"This is even better than before",
-      "imageURL":"https://media.giphy.com/media/3i7zenReaUuI0/giphy.gif"
+      "id": 2,
+      "userId": 1,
+      "title": "This is even better than before",
+      "imageURL": "https://media.giphy.com/media/3i7zenReaUuI0/giphy.gif"
     }
   ],
   "messages": []
