@@ -22,7 +22,7 @@ const showNavBar = () => {
 
 const showFooter = () => {
 	const footerElement = document.querySelector ("footer");
-		footerElement.innerHTML = Footer ();
+		footerElement.innerHTML = Footer();
 }
 
 // const handleGiffyClick = (event) => {
@@ -37,12 +37,12 @@ const showFooter = () => {
 // 	showNavBar();
 // 	showPostList();
 // }
-const theJokes = () => {
-    const postElement = document.querySelector(".jokesList");
-    getJokes().then(apiJoke => {
-    postElement.innerHTML = `<h3>${apiJoke.joke}</h3>`
-})
-}
+// const theJokes = () => {
+//     const postElement = document.querySelector(".jokesList");
+//     getJokes().then(apiJoke => {
+//     postElement.innerHTML = `<h3>${apiJoke.joke}</h3>`
+// })
+// }
 
 const applicationElement = document.querySelector(".giffygram");
 applicationElement.addEventListener("click", event => {
@@ -56,7 +56,7 @@ const startGiffyGram = () => {
     showFooter();
     showNavBar();
     showPostList();
-    theJokes();
+    // theJokes();
 }
 
 
