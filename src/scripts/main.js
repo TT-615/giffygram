@@ -1,8 +1,9 @@
 import { getJokes } from "./data/JokesData.js";
-import { getPosts } from "./data/DataManager.js";
+import { getPosts, getUsers } from "./data/DataManager.js";
 import { PostList } from "./feed/PostList.js";
 import { NavBar } from "./nav/NavBar.js";
 import { Footer } from "./footer/Footer.js";
+
 
 const showPostList = () => {
 	//Get a reference to the location on the DOM where the list will display
@@ -52,12 +53,30 @@ applicationElement.addEventListener("click", event => {
     }
 })
 
+
+getUsers()
+.then(data => {
+    console.log("User Data", data)
+})
+
+
 const startGiffyGram = () => {
-    showFooter();
+   
     showNavBar();
     showPostList();
+    showFooter();
     // theJokes();
 }
 
 
 startGiffyGram();
+
+
+applicationElement.addEventListener("change", event => {
+    if (event.target.id === "yearSelection") {
+      const yearAsNumber = parseInt(event.target.value)
+  
+      console.log(`User wants to see posts since ${yearAsNumber}`)
+    }
+  })
+  
