@@ -53,6 +53,17 @@ applicationElement.addEventListener("click", event => {
     }
 })
 
+applicationElement.addEventListener("click", event => {
+    event.preventDefault();
+    if (event.target.id.startsWith("delete")) {
+      const postId = event.target.id.split("__")[1];
+      deletePost(postId)
+        .then(response => {
+          showPostList();
+        })
+    }
+  })
+  
 
 getUsers()
 .then(data => {
@@ -68,15 +79,4 @@ const startGiffyGram = () => {
     // theJokes();
 }
 
-
 startGiffyGram();
-
-
-applicationElement.addEventListener("change", event => {
-    if (event.target.id === "yearSelection") {
-      const yearAsNumber = parseInt(event.target.value)
-  
-      console.log(`User wants to see posts since ${yearAsNumber}`)
-    }
-  })
-  
