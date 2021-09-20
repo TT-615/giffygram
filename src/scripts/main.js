@@ -1,6 +1,7 @@
 import { getJokes } from "./data/JokesData.js";
-import { getPosts, getUsers } from "./data/DataManager.js";
+import { getPosts, getUsers, usePostCollection, createPost } from "./data/DataManager.js";
 import { PostList } from "./feed/PostList.js";
+import { PostEntry } from "./feed/PostEntry.js";
 import { NavBar } from "./nav/NavBar.js";
 import { Footer } from "./footer/Footer.js";
 
@@ -11,6 +12,12 @@ const showPostList = () => {
 	getPosts().then((allPosts) => {
 		postElement.innerHTML = PostList(allPosts);
 	})
+}
+
+const showPostEntry = () => {
+   const entryElement = document.querySelector(".entryForm");
+   console.log("entry element is", entryElement);
+         entryElement.innerHTML = PostEntry();
 }
 
 const showNavBar = () => {
@@ -47,7 +54,7 @@ const showFooter = () => {
 
 const applicationElement = document.querySelector(".giffygram");
 applicationElement.addEventListener("click", event => {
-    console.log("what was cicked", event.target)
+    console.log("what was clicked", event.target)
     if (event.target.id === "logout"){
         console.log("You clicked on logout")
     }
@@ -76,6 +83,7 @@ const startGiffyGram = () => {
     showNavBar();
     showPostList();
     showFooter();
+    showPostEntry();
     // theJokes();
 }
 

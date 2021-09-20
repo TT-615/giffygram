@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
+main { 
+    margin: 100px 0px;
+    padding: 30px;
+}
+
 .actionIcon {
     height: 1.2em;
     margin: 0.5em 0.5em;
