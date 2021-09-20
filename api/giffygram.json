@@ -43,28 +43,20 @@
   ],
   "posts": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "This is so so funny",
-      "description": "Meow Meow Time",
-      "timestamp": 1632089982175,
-      "imageURL": "https://media.giphy.com/media/10JhviFuU2gWD6/giphy.gif"
-    },
-    {
-      "id": 2,
-      "userId": 1,
-      "title": "This is even better than before",
-      "description": "Meow Meow Time",
-      "timestamp": 1632089982175,
-      "imageURL": "https://media.giphy.com/media/3i7zenReaUuI0/giphy.gif"
-    },
-    {
       "title": "Kitty Cat",
       "imageURL": "https://media.giphy.com/media/5Vy3WpDbXXMze/giphy.gif",
       "description": "Meow Meow Time",
       "userId": 1,
       "timestamp": 1632089982175,
       "id": 3
+    },
+    {
+      "title": "Garfield",
+      "imageURL": "https://media.giphy.com/media/3o6fJbwYFe3SmVVQ4M/giphy.gif",
+      "description": "Meow",
+      "userId": 1,
+      "timestamp": 1632156759537,
+      "id": 4
     }
   ],
   "messages": []
